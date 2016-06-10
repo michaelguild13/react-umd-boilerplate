@@ -13,7 +13,7 @@ Run `npm install`
 ###Npm Scripts Included
 `npm start` - builds & watches the UMD. <br/>
 `npm run build` - builds only the UMD file. File is exported as index.js in root for including as a Node Package. <br/>
-`npm run build-min` - builds the UMD minified file and is exported as storyUI.min.js in the root directory.
+`npm run build-min` - builds the UMD minified file and is exported as reactUMD.min.js in the root directory.
 
 ###File Structure (from root)
 `src/components` - contains all components and each component is self contained in it's own directory. <br/>
