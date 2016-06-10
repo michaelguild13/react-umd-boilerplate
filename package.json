@@ -1,0 +1,40 @@
+{
+  "name": "react-component-library-tutorial",
+  "version": "1.0.0",
+  "description": "react component library tutorial",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch & node server.js",
+    "watch": "webpack --watch src/build.js index.js --output-library ReactUMD --output-library-target umd",
+    "build": "webpack ./src/build.js index.js --output-library ReactUMD --output-library-target umd",
+    "build-min": "webpack -p src/build.js dist/reactUMD.min.js --output-library ReactUMD --output-library-target umd",
+    "build-css": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelguild13/react-component-library-tutorial.git"
+  },
+  "author": "Michael Guild <michaelguild13@gmail.com> (https://github.com/michaelguild13)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelguild13/react-component-library-tutorial.git/issues"
+  },
+  "homepage": "https://github.com/michaelguild13/react-component-library-tutorial.git#readme",
+  "dependencies": {
+    "css-loader": "^0.15.6",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "http-server": "^0.8.0",
+    "node-sass": "^3.2.0",
+    "sass-loader": "^1.0.3",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.12.15",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.20",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.15.6",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
+  }
+}
