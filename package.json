@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run watch & node server.js",
-    "watch": "webpack --watch src/build.js index.js --output-library ReactUMD --output-library-target umd",
+    "watch": "node server.js & webpack --watch src/build.js index.js --output-library ReactUMD --output-library-target umd",
     "build": "webpack ./src/build.js index.js --output-library ReactUMD --output-library-target umd",
     "build-min": "webpack -p src/build.js dist/reactUMD.min.js --output-library ReactUMD --output-library-target umd",
     "build-css": ""
